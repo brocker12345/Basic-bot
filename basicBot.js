@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/brocker12345/Basic-bot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/brocker12345/Basic-bot/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -183,9 +183,9 @@
         status: false,
         name: "basicBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/brocker12345/Basic-bot/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/brocker12345/Basic-bot/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/brocker12345/Basic-bot/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/brocker12345/Basic-bot/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/brocker12345/Basic-bot/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/brocker12345/Basic-bot/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -243,8 +243,8 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/brocker12345/plug.dj/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/brocker12345/plug.dj/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://cdn.jsdelivr.net/gh/brocker12345/plug.dj/blacklists/ExampleNSFWlist.json",
+                OP: "https://cdn.jsdelivr.net/gh/brocker12345/plug.dj/blacklists/ExampleOPlist.json"
             }
         },
         room: {
